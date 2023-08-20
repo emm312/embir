@@ -81,7 +81,7 @@ impl core::fmt::Display for BasicBlock {
                 "({}):",
                 self.params
                     .iter()
-                    .map(alloc::string::ToString::to_string)
+                    .map(ToString::to_string)
                     .collect::<Vec<_>>()
                     .join(", ")
             )?;
